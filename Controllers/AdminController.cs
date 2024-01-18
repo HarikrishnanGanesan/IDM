@@ -78,6 +78,8 @@ namespace IDM.Controllers
 
         public async Task<IActionResult> add(AddEmployeeViewModel addEmployeeViewModel)
         {
+            var exceptions = new List<Exception>();    
+            
             try
             {
                 var employee = new Employee()
@@ -109,10 +111,12 @@ namespace IDM.Controllers
             }
             catch (ValidationException validationException)
             {
+                Console.WriteLine(validationException.Message);
                 return View("ValidationError");
             }
-            catch (Exception exceptions)
+            catch (Exception exception)
             {
+                exceptions.Add(exception);
                 return View("Error");
             }
         }
@@ -152,6 +156,7 @@ namespace IDM.Controllers
 
         public async Task<IActionResult> update(UpdateEmployeeViewModel updateEmployeeViewModel)
         {
+            var exceptions = new List<Exception>();
             try
             {
                 var employee = await applicationDbContext.Employee.FindAsync(updateEmployeeViewModel.Id);
@@ -186,7 +191,7 @@ namespace IDM.Controllers
             catch (Exception exception)
             {
                 ViewBag.ErrorMessage = "An error occurred while updating the employee.";
-
+                exceptions.Add(exception);
                 return View("Error");
             }
         }
