@@ -8397,11 +8397,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DotNet\\MVC\\IDM\\IDM.csproj",
+      "projectUniqueName": "D:\\DotNet\\MVCApplication\\MVC\\IDM\\IDM.csproj",
       "projectName": "IDM",
-      "projectPath": "D:\\DotNet\\MVC\\IDM\\IDM.csproj",
+      "projectPath": "D:\\DotNet\\MVCApplication\\MVC\\IDM\\IDM.csproj",
       "packagesPath": "C:\\Users\\hari.ganesan\\.nuget\\packages\\",
-      "outputPath": "D:\\DotNet\\MVC\\IDM\\obj\\",
+      "outputPath": "D:\\DotNet\\MVCApplication\\MVC\\IDM\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hari.ganesan\\AppData\\Roaming\\NuGet\\NuGet.Config"

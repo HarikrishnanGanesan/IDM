@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NqqmJwDNROIuQQg8K6KHwD420RqFjok6OTsbmnWxz9OqSodkdjE2CsJKAtk/aakMKZCsZsmRQSRB9uxfYoOUBQ==",
+  "dgSpecHash": "7qpaykB13TS2TJoIeqWxAzV9cT8mjIYvHoBYlFHfHZ4KTyCBvV1a/wQtNzMfZBy27kQj0CEQ874rMOJUUTlWQw==",
   "success": true,
-  "projectFilePath": "D:\\DotNet\\MVC\\IDM\\IDM.csproj",
+  "projectFilePath": "D:\\DotNet\\MVCApplication\\MVC\\IDM\\IDM.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hari.ganesan\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\hari.ganesan\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

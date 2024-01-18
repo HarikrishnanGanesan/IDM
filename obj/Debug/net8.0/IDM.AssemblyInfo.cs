@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IDM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e914f7c0de3288800b35e35fb74233f1ee17a52f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+253e95634d29e58e3321f72af3d809b7f6f803a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("IDM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IDM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
