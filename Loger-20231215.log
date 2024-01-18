@@ -1,0 +1,402 @@
+2023-12-15 08:31:24.001 +05:30 [INF] User profile is available. Using 'C:\Users\Krishna\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-15 08:31:32.487 +05:30 [INF] Executed DbCommand (1,086ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-12-15 08:31:32.867 +05:30 [INF] Executed DbCommand (126ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-12-15 08:31:33.233 +05:30 [INF] Creating key {94ff91c9-40aa-4e67-9b4d-e409bc7a6a95} with creation date 2023-12-15 03:01:33Z, activation date 2023-12-15 03:01:32Z, and expiration date 2024-03-14 03:01:32Z.
+2023-12-15 08:31:33.279 +05:30 [INF] Writing data to file 'C:\Users\Krishna\AppData\Local\ASP.NET\DataProtection-Keys\key-94ff91c9-40aa-4e67-9b4d-e409bc7a6a95.xml'.
+2023-12-15 08:31:33.487 +05:30 [INF] Now listening on: http://localhost:5054
+2023-12-15 08:31:33.492 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-15 08:31:33.493 +05:30 [INF] Hosting environment: Development
+2023-12-15 08:31:33.494 +05:30 [INF] Content root path: E:\IDM
+2023-12-15 08:32:10.952 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/ - -
+2023-12-15 08:32:11.089 +05:30 [WRN] Failed to determine the https port for redirect.
+2023-12-15 08:32:11.202 +05:30 [INF] Executing endpoint 'IDM.Controllers.HomeController.Index (IDM)'
+2023-12-15 08:32:11.236 +05:30 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller IDM.Controllers.HomeController (IDM).
+2023-12-15 08:32:11.260 +05:30 [INF] Index action method called.
+2023-12-15 08:32:11.274 +05:30 [INF] Executing ViewResult, running view Index.
+2023-12-15 08:32:11.795 +05:30 [INF] Executed ViewResult - view Index executed in 518.1705ms.
+2023-12-15 08:32:11.800 +05:30 [INF] Executed action IDM.Controllers.HomeController.Index (IDM) in 562.1196ms
+2023-12-15 08:32:11.800 +05:30 [INF] Executed endpoint 'IDM.Controllers.HomeController.Index (IDM)'
+2023-12-15 08:32:11.815 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/ - - - 200 - text/html;+charset=utf-8 865.0505ms
+2023-12-15 08:32:11.923 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/images/AspireSystemslogo.png - -
+2023-12-15 08:32:11.923 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/IDM.styles.css?v=tDSiGoOgw4QPWb3SOEMfT9opmK0qGUqdhj2X4hNqimQ - -
+2023-12-15 08:32:11.923 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - -
+2023-12-15 08:32:11.923 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/css/landing.css - -
+2023-12-15 08:32:11.929 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/lib/bootstrap/dist/css/bootstrap.min.css - -
+2023-12-15 08:32:11.951 +05:30 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'E:\IDM\wwwroot\css\site.css'
+2023-12-15 08:32:11.951 +05:30 [INF] Sending file. Request path: '/IDM.styles.css'. Physical path: 'E:\IDM\obj\Debug\net7.0\scopedcss\bundle\IDM.styles.css'
+2023-12-15 08:32:11.952 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - - - 200 362 text/css 28.7531ms
+2023-12-15 08:32:11.952 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/IDM.styles.css?v=tDSiGoOgw4QPWb3SOEMfT9opmK0qGUqdhj2X4hNqimQ - - - 200 2412 text/css 28.7515ms
+2023-12-15 08:32:11.953 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2023-12-15 08:32:11.953 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/lib/jquery/dist/jquery.min.js - -
+2023-12-15 08:32:12.159 +05:30 [INF] Sending file. Request path: '/images/AspireSystemslogo.png'. Physical path: 'E:\IDM\wwwroot\images\AspireSystemslogo.png'
+2023-12-15 08:32:12.161 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/images/AspireSystemslogo.png - - - 200 120016 image/png 237.7266ms
+2023-12-15 08:32:12.162 +05:30 [INF] Sending file. Request path: '/css/landing.css'. Physical path: 'E:\IDM\wwwroot\css\landing.css'
+2023-12-15 08:32:12.162 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/css/landing.css - - - 200 2648 text/css 239.0098ms
+2023-12-15 08:32:12.295 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2023-12-15 08:32:12.297 +05:30 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'E:\IDM\wwwroot\js\site.js'
+2023-12-15 08:32:12.297 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 text/javascript 1.7921ms
+2023-12-15 08:32:12.755 +05:30 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'E:\IDM\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2023-12-15 08:32:12.756 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162720 text/css 826.9089ms
+2023-12-15 08:32:13.167 +05:30 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'E:\IDM\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2023-12-15 08:32:13.167 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78468 text/javascript 1214.3475ms
+2023-12-15 08:32:13.431 +05:30 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'E:\IDM\wwwroot\lib\jquery\dist\jquery.min.js'
+2023-12-15 08:32:13.431 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/lib/jquery/dist/jquery.min.js - - - 200 89501 text/javascript 1478.6032ms
+2023-12-15 08:32:13.695 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/favicon.ico - -
+2023-12-15 08:32:13.767 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/Login - -
+2023-12-15 08:32:13.774 +05:30 [INF] Executing endpoint '/Account/Login'
+2023-12-15 08:32:13.840 +05:30 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'E:\IDM\wwwroot\favicon.ico'
+2023-12-15 08:32:13.842 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/favicon.ico - - - 200 5430 image/x-icon 145.3898ms
+2023-12-15 08:32:13.973 +05:30 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2023-12-15 08:32:14.283 +05:30 [INF] Executing handler method IDM.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2023-12-15 08:32:14.299 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2023-12-15 08:32:14.302 +05:30 [INF] Executed handler method OnGetAsync, returned result .
+2023-12-15 08:32:14.309 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-12-15 08:32:14.311 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-12-15 08:32:14.710 +05:30 [INF] Executed page /Account/Login in 506.7168ms
+2023-12-15 08:32:14.710 +05:30 [INF] Executed endpoint '/Account/Login'
+2023-12-15 08:32:14.712 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/Login - - - 200 - text/html;+charset=utf-8 944.3727ms
+2023-12-15 08:32:14.756 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/css/login.css - -
+2023-12-15 08:32:14.757 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/jquery.min.js - -
+2023-12-15 08:32:14.757 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/popper.js - -
+2023-12-15 08:32:14.760 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/bootstrap.min.js - -
+2023-12-15 08:32:14.761 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/main.js - -
+2023-12-15 08:32:14.762 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/lib/jquery-validation/dist/jquery.validate.js - -
+2023-12-15 08:32:14.784 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/popper.js - - - 404 0 - 26.8225ms
+2023-12-15 08:32:14.784 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/jquery.min.js - - - 404 0 - 27.3213ms
+2023-12-15 08:32:14.784 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/main.js - - - 404 0 - 22.9468ms
+2023-12-15 08:32:14.784 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/bootstrap.min.js - - - 404 0 - 23.6760ms
+2023-12-15 08:32:14.818 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - -
+2023-12-15 08:32:15.336 +05:30 [INF] Sending file. Request path: '/Identity/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'C:\Users\Krishna\.nuget\packages\microsoft.aspnetcore.identity.ui\7.0.4\staticwebassets\V5\lib\jquery-validation\dist\jquery.validate.js'
+2023-12-15 08:32:15.336 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/lib/jquery-validation/dist/jquery.validate.js - - - 200 48676 text/javascript 574.1592ms
+2023-12-15 08:32:15.378 +05:30 [INF] Sending file. Request path: '/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'. Physical path: 'C:\Users\Krishna\.nuget\packages\microsoft.aspnetcore.identity.ui\7.0.4\staticwebassets\V5\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js'
+2023-12-15 08:32:15.378 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - - - 200 19385 text/javascript 560.3953ms
+2023-12-15 08:32:15.399 +05:30 [INF] Sending file. Request path: '/css/login.css'. Physical path: 'E:\IDM\wwwroot\css\login.css'
+2023-12-15 08:32:15.399 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/css/login.css - - - 200 247969 text/css 643.4663ms
+2023-12-15 08:43:30.667 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5054/Identity/Account/Login application/x-www-form-urlencoded 294
+2023-12-15 08:43:30.668 +05:30 [INF] Executing endpoint '/Account/Login'
+2023-12-15 08:43:30.670 +05:30 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2023-12-15 08:43:30.868 +05:30 [INF] Executing handler method IDM.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2023-12-15 08:43:31.807 +05:30 [INF] Executed DbCommand (569ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-12-15 08:43:34.371 +05:30 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-12-15 08:43:34.392 +05:30 [INF] Executed page /Account/Login in 3721.6789ms
+2023-12-15 08:43:34.394 +05:30 [INF] Executed endpoint '/Account/Login'
+2023-12-15 08:43:34.410 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5054/Identity/Account/Login application/x-www-form-urlencoded 294 - 200 - text/html;+charset=utf-8 3742.3132ms
+2023-12-15 08:43:34.440 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/jquery.min.js - -
+2023-12-15 08:43:34.442 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/jquery.min.js - - - 404 0 - 1.7537ms
+2023-12-15 08:43:34.445 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/popper.js - -
+2023-12-15 08:43:34.446 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/popper.js - - - 404 0 - 1.1874ms
+2023-12-15 08:43:34.452 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/bootstrap.min.js - -
+2023-12-15 08:43:34.452 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/bootstrap.min.js - - - 404 0 - 0.8600ms
+2023-12-15 08:43:34.452 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/main.js - -
+2023-12-15 08:43:34.453 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/main.js - - - 404 0 - 0.9182ms
+2023-12-15 08:43:39.465 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5054/Identity/Account/Login application/x-www-form-urlencoded 295
+2023-12-15 08:43:39.466 +05:30 [INF] Executing endpoint '/Account/Login'
+2023-12-15 08:43:39.467 +05:30 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2023-12-15 08:43:39.473 +05:30 [INF] Executing handler method IDM.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2023-12-15 08:43:39.507 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-12-15 08:43:39.652 +05:30 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-12-15 08:43:39.657 +05:30 [INF] Executed page /Account/Login in 189.7148ms
+2023-12-15 08:43:39.657 +05:30 [INF] Executed endpoint '/Account/Login'
+2023-12-15 08:43:39.659 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5054/Identity/Account/Login application/x-www-form-urlencoded 295 - 200 - text/html;+charset=utf-8 193.3522ms
+2023-12-15 08:43:39.701 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/jquery.min.js - -
+2023-12-15 08:43:39.702 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/jquery.min.js - - - 404 0 - 1.2359ms
+2023-12-15 08:43:39.704 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/popper.js - -
+2023-12-15 08:43:39.705 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/popper.js - - - 404 0 - 1.4091ms
+2023-12-15 08:43:39.706 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/main.js - -
+2023-12-15 08:43:39.706 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/bootstrap.min.js - -
+2023-12-15 08:43:39.707 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/bootstrap.min.js - - - 404 0 - 0.6878ms
+2023-12-15 08:43:39.707 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/main.js - - - 404 0 - 0.6879ms
+2023-12-15 08:43:51.603 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5054/Identity/Account/Login application/x-www-form-urlencoded 295
+2023-12-15 08:43:51.604 +05:30 [INF] Executing endpoint '/Account/Login'
+2023-12-15 08:43:51.604 +05:30 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2023-12-15 08:43:51.606 +05:30 [INF] Executing handler method IDM.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2023-12-15 08:43:51.617 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-12-15 08:43:52.194 +05:30 [INF] Executed DbCommand (106ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-12-15 08:43:52.338 +05:30 [INF] Executed DbCommand (53ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-12-15 08:43:52.352 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-12-15 08:43:52.398 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-12-15 08:43:52.428 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-12-15 08:43:52.433 +05:30 [INF] User logged in.
+2023-12-15 08:43:52.452 +05:30 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2023-12-15 08:43:52.454 +05:30 [INF] Executing LocalRedirectResult, redirecting to /.
+2023-12-15 08:43:52.456 +05:30 [INF] Executed page /Account/Login in 851.1889ms
+2023-12-15 08:43:52.456 +05:30 [INF] Executed endpoint '/Account/Login'
+2023-12-15 08:43:52.456 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5054/Identity/Account/Login application/x-www-form-urlencoded 295 - 302 0 - 853.2015ms
+2023-12-15 08:43:52.468 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/ - -
+2023-12-15 08:43:52.483 +05:30 [INF] Executing endpoint 'IDM.Controllers.HomeController.Index (IDM)'
+2023-12-15 08:43:52.484 +05:30 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller IDM.Controllers.HomeController (IDM).
+2023-12-15 08:43:52.485 +05:30 [INF] Index action method called.
+2023-12-15 08:43:52.487 +05:30 [INF] Executing ViewResult, running view Index.
+2023-12-15 08:43:52.536 +05:30 [INF] Executed ViewResult - view Index executed in 49.1569ms.
+2023-12-15 08:43:52.537 +05:30 [INF] Executed action IDM.Controllers.HomeController.Index (IDM) in 53.1863ms
+2023-12-15 08:43:52.537 +05:30 [INF] Executed endpoint 'IDM.Controllers.HomeController.Index (IDM)'
+2023-12-15 08:43:52.538 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/ - - - 200 - text/html;+charset=utf-8 69.1900ms
+2023-12-15 08:43:52.582 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/css/style.css - -
+2023-12-15 08:43:52.584 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/images/offc.jpg - -
+2023-12-15 08:43:52.586 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/js/script.js - -
+2023-12-15 08:43:52.865 +05:30 [INF] Sending file. Request path: '/css/style.css'. Physical path: 'E:\IDM\wwwroot\css\style.css'
+2023-12-15 08:43:52.865 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/css/style.css - - - 200 4102 text/css 282.5250ms
+2023-12-15 08:43:53.116 +05:30 [INF] Sending file. Request path: '/images/offc.jpg'. Physical path: 'E:\IDM\wwwroot\images\offc.jpg'
+2023-12-15 08:43:53.116 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/images/offc.jpg - - - 200 108420 image/jpeg 532.5029ms
+2023-12-15 08:43:53.746 +05:30 [INF] Sending file. Request path: '/js/script.js'. Physical path: 'E:\IDM\wwwroot\js\script.js'
+2023-12-15 08:43:53.746 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/js/script.js - - - 200 2644 text/javascript 1159.7031ms
+2023-12-15 08:43:58.440 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Client/showProfile - -
+2023-12-15 08:43:58.467 +05:30 [INF] Executing endpoint 'IDM.Controllers.ClientController.showProfile (IDM)'
+2023-12-15 08:43:58.606 +05:30 [INF] Route matched with {action = "showProfile", controller = "Client", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] showProfile(System.Guid) on controller IDM.Controllers.ClientController (IDM).
+2023-12-15 08:43:59.105 +05:30 [INF] Executed DbCommand (473ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[AdhaarNumber], [e].[DateOfBirth], [e].[Department], [e].[FirstName], [e].[Gender], [e].[LastName], [e].[MobileNumber], [e].[Salary], [e].[email], [e].[userPassword]
+FROM [Employee] AS [e]
+2023-12-15 08:43:59.257 +05:30 [INF] Executing ViewResult, running view showProfile.
+2023-12-15 08:43:59.299 +05:30 [INF] Executed ViewResult - view showProfile executed in 43.512ms.
+2023-12-15 08:43:59.300 +05:30 [INF] Executed action IDM.Controllers.ClientController.showProfile (IDM) in 693.9881ms
+2023-12-15 08:43:59.300 +05:30 [INF] Executed endpoint 'IDM.Controllers.ClientController.showProfile (IDM)'
+2023-12-15 08:43:59.301 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Client/showProfile - - - 200 - text/html;+charset=utf-8 860.7143ms
+2023-12-15 08:43:59.403 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Client/style.css - -
+2023-12-15 08:43:59.409 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Client/style.css - - - 404 0 - 5.6061ms
+2023-12-15 08:44:07.237 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Client/contact - -
+2023-12-15 08:44:07.247 +05:30 [INF] Executing endpoint 'IDM.Controllers.ClientController.contact (IDM)'
+2023-12-15 08:44:07.250 +05:30 [INF] Route matched with {action = "contact", controller = "Client", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult contact() on controller IDM.Controllers.ClientController (IDM).
+2023-12-15 08:44:07.254 +05:30 [INF] Executing ViewResult, running view contact.
+2023-12-15 08:44:07.326 +05:30 [INF] Executed ViewResult - view contact executed in 73.3594ms.
+2023-12-15 08:44:07.327 +05:30 [INF] Executed action IDM.Controllers.ClientController.contact (IDM) in 77.1501ms
+2023-12-15 08:44:07.328 +05:30 [INF] Executed endpoint 'IDM.Controllers.ClientController.contact (IDM)'
+2023-12-15 08:44:07.328 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Client/contact - - - 200 - text/html;+charset=utf-8 90.5538ms
+2023-12-15 08:44:12.360 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5054/Identity/Account/Logout?returnUrl=%2F application/x-www-form-urlencoded 225
+2023-12-15 08:44:12.384 +05:30 [INF] Executing endpoint '/Account/Logout'
+2023-12-15 08:44:12.390 +05:30 [INF] Route matched with {page = "/Account/Logout", area = "Identity", action = "", controller = ""}. Executing page /Account/Logout
+2023-12-15 08:44:12.402 +05:30 [INF] Executing handler method IDM.Areas.Identity.Pages.Account.LogoutModel.OnPost - ModelState is "Valid"
+2023-12-15 08:44:12.406 +05:30 [INF] AuthenticationScheme: Identity.Application signed out.
+2023-12-15 08:44:12.406 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2023-12-15 08:44:12.407 +05:30 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2023-12-15 08:44:12.407 +05:30 [INF] User logged out.
+2023-12-15 08:44:12.408 +05:30 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2023-12-15 08:44:12.411 +05:30 [INF] Executing LocalRedirectResult, redirecting to /.
+2023-12-15 08:44:12.412 +05:30 [INF] Executed page /Account/Logout in 22.0173ms
+2023-12-15 08:44:12.412 +05:30 [INF] Executed endpoint '/Account/Logout'
+2023-12-15 08:44:12.412 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5054/Identity/Account/Logout?returnUrl=%2F application/x-www-form-urlencoded 225 - 302 0 - 52.4289ms
+2023-12-15 08:44:12.420 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/ - -
+2023-12-15 08:44:12.420 +05:30 [INF] Executing endpoint 'IDM.Controllers.HomeController.Index (IDM)'
+2023-12-15 08:44:12.421 +05:30 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller IDM.Controllers.HomeController (IDM).
+2023-12-15 08:44:12.421 +05:30 [INF] Index action method called.
+2023-12-15 08:44:12.422 +05:30 [INF] Executing ViewResult, running view Index.
+2023-12-15 08:44:12.424 +05:30 [INF] Executed ViewResult - view Index executed in 1.5884ms.
+2023-12-15 08:44:12.425 +05:30 [INF] Executed action IDM.Controllers.HomeController.Index (IDM) in 4.3807ms
+2023-12-15 08:44:12.425 +05:30 [INF] Executed endpoint 'IDM.Controllers.HomeController.Index (IDM)'
+2023-12-15 08:44:12.426 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/ - - - 200 - text/html;+charset=utf-8 5.6354ms
+2023-12-15 08:44:12.688 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/Login - -
+2023-12-15 08:44:12.688 +05:30 [INF] Executing endpoint '/Account/Login'
+2023-12-15 08:44:12.689 +05:30 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2023-12-15 08:44:12.689 +05:30 [INF] Executing handler method IDM.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2023-12-15 08:44:12.689 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2023-12-15 08:44:12.689 +05:30 [INF] Executed handler method OnGetAsync, returned result .
+2023-12-15 08:44:12.690 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-12-15 08:44:12.690 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-12-15 08:44:12.696 +05:30 [INF] Executed page /Account/Login in 7.3855ms
+2023-12-15 08:44:12.696 +05:30 [INF] Executed endpoint '/Account/Login'
+2023-12-15 08:44:12.696 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/Login - - - 200 - text/html;+charset=utf-8 8.7480ms
+2023-12-15 08:44:12.752 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/jquery.min.js - -
+2023-12-15 08:44:12.753 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/jquery.min.js - - - 404 0 - 1.4759ms
+2023-12-15 08:44:12.755 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/popper.js - -
+2023-12-15 08:44:12.756 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/popper.js - - - 404 0 - 0.9709ms
+2023-12-15 08:44:12.757 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/bootstrap.min.js - -
+2023-12-15 08:44:12.760 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/bootstrap.min.js - - - 404 0 - 3.2305ms
+2023-12-15 08:44:12.761 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/main.js - -
+2023-12-15 08:44:12.763 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/main.js - - - 404 0 - 1.3251ms
+2023-12-15 08:44:25.433 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5054/Identity/Account/Login application/x-www-form-urlencoded 292
+2023-12-15 08:44:25.434 +05:30 [INF] Executing endpoint '/Account/Login'
+2023-12-15 08:44:25.434 +05:30 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2023-12-15 08:44:25.436 +05:30 [INF] Executing handler method IDM.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2023-12-15 08:44:25.506 +05:30 [INF] Executed DbCommand (67ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-12-15 08:44:25.630 +05:30 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-12-15 08:44:25.635 +05:30 [INF] Executed page /Account/Login in 201.103ms
+2023-12-15 08:44:25.635 +05:30 [INF] Executed endpoint '/Account/Login'
+2023-12-15 08:44:25.636 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5054/Identity/Account/Login application/x-www-form-urlencoded 292 - 200 - text/html;+charset=utf-8 203.5921ms
+2023-12-15 08:44:25.684 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/jquery.min.js - -
+2023-12-15 08:44:25.685 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/jquery.min.js - - - 404 0 - 1.6186ms
+2023-12-15 08:44:25.687 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/popper.js - -
+2023-12-15 08:44:25.690 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/popper.js - - - 404 0 - 2.0831ms
+2023-12-15 08:44:25.694 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/bootstrap.min.js - -
+2023-12-15 08:44:25.695 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/main.js - -
+2023-12-15 08:44:25.695 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/bootstrap.min.js - - - 404 0 - 0.9512ms
+2023-12-15 08:44:25.695 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/main.js - - - 404 0 - 0.6100ms
+2023-12-15 08:44:34.969 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5054/Identity/Account/Login application/x-www-form-urlencoded 292
+2023-12-15 08:44:34.970 +05:30 [INF] Executing endpoint '/Account/Login'
+2023-12-15 08:44:34.971 +05:30 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2023-12-15 08:44:34.974 +05:30 [INF] Executing handler method IDM.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2023-12-15 08:44:34.986 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-12-15 08:44:35.197 +05:30 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-12-15 08:44:35.200 +05:30 [INF] Executed page /Account/Login in 229.0612ms
+2023-12-15 08:44:35.201 +05:30 [INF] Executed endpoint '/Account/Login'
+2023-12-15 08:44:35.201 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5054/Identity/Account/Login application/x-www-form-urlencoded 292 - 200 - text/html;+charset=utf-8 231.6546ms
+2023-12-15 08:44:35.237 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/jquery.min.js - -
+2023-12-15 08:44:35.238 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/jquery.min.js - - - 404 0 - 1.0561ms
+2023-12-15 08:44:35.244 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/popper.js - -
+2023-12-15 08:44:35.245 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/popper.js - - - 404 0 - 1.0671ms
+2023-12-15 08:44:35.246 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/bootstrap.min.js - -
+2023-12-15 08:44:35.247 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/bootstrap.min.js - - - 404 0 - 0.9468ms
+2023-12-15 08:44:35.251 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/main.js - -
+2023-12-15 08:44:35.252 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/main.js - - - 404 0 - 0.7900ms
+2023-12-15 08:44:44.972 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5054/Identity/Account/Login application/x-www-form-urlencoded 295
+2023-12-15 08:44:44.972 +05:30 [INF] Executing endpoint '/Account/Login'
+2023-12-15 08:44:44.973 +05:30 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2023-12-15 08:44:44.976 +05:30 [INF] Executing handler method IDM.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2023-12-15 08:44:44.986 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-12-15 08:44:45.144 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-12-15 08:44:45.166 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-12-15 08:44:45.171 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-12-15 08:44:45.221 +05:30 [INF] Executed DbCommand (47ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-12-15 08:44:45.222 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-12-15 08:44:45.223 +05:30 [INF] User logged in.
+2023-12-15 08:44:45.223 +05:30 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2023-12-15 08:44:45.224 +05:30 [INF] Executing LocalRedirectResult, redirecting to /.
+2023-12-15 08:44:45.225 +05:30 [INF] Executed page /Account/Login in 252.1764ms
+2023-12-15 08:44:45.225 +05:30 [INF] Executed endpoint '/Account/Login'
+2023-12-15 08:44:45.226 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5054/Identity/Account/Login application/x-www-form-urlencoded 295 - 302 0 - 253.6496ms
+2023-12-15 08:44:45.235 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/ - -
+2023-12-15 08:44:45.236 +05:30 [INF] Executing endpoint 'IDM.Controllers.HomeController.Index (IDM)'
+2023-12-15 08:44:45.236 +05:30 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller IDM.Controllers.HomeController (IDM).
+2023-12-15 08:44:45.237 +05:30 [INF] Index action method called.
+2023-12-15 08:44:45.238 +05:30 [INF] Executing ViewResult, running view Index.
+2023-12-15 08:44:45.246 +05:30 [INF] Executed ViewResult - view Index executed in 8.1264ms.
+2023-12-15 08:44:45.247 +05:30 [INF] Executed action IDM.Controllers.HomeController.Index (IDM) in 10.3967ms
+2023-12-15 08:44:45.247 +05:30 [INF] Executed endpoint 'IDM.Controllers.HomeController.Index (IDM)'
+2023-12-15 08:44:45.247 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/ - - - 200 - text/html;+charset=utf-8 12.4763ms
+2023-12-15 08:44:45.442 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Admin/Show - -
+2023-12-15 08:44:45.445 +05:30 [INF] Executing endpoint 'IDM.Controllers.AdminController.show (IDM)'
+2023-12-15 08:44:45.454 +05:30 [INF] Route matched with {action = "show", controller = "Admin", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] show() on controller IDM.Controllers.AdminController (IDM).
+2023-12-15 08:44:45.486 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[AdhaarNumber], [e].[DateOfBirth], [e].[Department], [e].[FirstName], [e].[Gender], [e].[LastName], [e].[MobileNumber], [e].[Salary], [e].[email], [e].[userPassword]
+FROM [Employee] AS [e]
+2023-12-15 08:44:45.493 +05:30 [INF] Executing ViewResult, running view show.
+2023-12-15 08:44:45.547 +05:30 [INF] Executed ViewResult - view show executed in 58.5263ms.
+2023-12-15 08:44:45.550 +05:30 [INF] Executed action IDM.Controllers.AdminController.show (IDM) in 95.535ms
+2023-12-15 08:44:45.550 +05:30 [INF] Executed endpoint 'IDM.Controllers.AdminController.show (IDM)'
+2023-12-15 08:44:45.550 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Admin/Show - - - 200 - text/html;+charset=utf-8 107.8569ms
+2023-12-15 08:45:03.906 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Admin/Add - -
+2023-12-15 08:45:03.911 +05:30 [INF] Executing endpoint 'IDM.Controllers.AdminController.add (IDM)'
+2023-12-15 08:45:03.913 +05:30 [INF] Route matched with {action = "add", controller = "Admin", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult add() on controller IDM.Controllers.AdminController (IDM).
+2023-12-15 08:45:03.917 +05:30 [INF] Executing ViewResult, running view add.
+2023-12-15 08:45:04.084 +05:30 [INF] Executed ViewResult - view add executed in 169.0522ms.
+2023-12-15 08:45:04.085 +05:30 [INF] Executed action IDM.Controllers.AdminController.add (IDM) in 171.9234ms
+2023-12-15 08:45:04.085 +05:30 [INF] Executed endpoint 'IDM.Controllers.AdminController.add (IDM)'
+2023-12-15 08:45:04.085 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Admin/Add - - - 200 - text/html;+charset=utf-8 179.2962ms
+2023-12-15 08:45:04.120 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/lib/jquery-validation/dist/jquery.validate.min.js - -
+2023-12-15 08:45:04.122 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - -
+2023-12-15 08:45:04.686 +05:30 [INF] Sending file. Request path: '/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js'. Physical path: 'E:\IDM\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js'
+2023-12-15 08:45:04.686 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - - - 200 5824 text/javascript 564.6433ms
+2023-12-15 08:45:04.715 +05:30 [INF] Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.min.js'. Physical path: 'E:\IDM\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js'
+2023-12-15 08:45:04.715 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/lib/jquery-validation/dist/jquery.validate.min.js - - - 200 23261 text/javascript 595.0147ms
+2023-12-15 08:46:21.687 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5054/Admin/Add application/x-www-form-urlencoded 306
+2023-12-15 08:46:21.690 +05:30 [INF] Executing endpoint 'IDM.Controllers.AdminController.add (IDM)'
+2023-12-15 08:46:21.710 +05:30 [INF] Route matched with {action = "add", controller = "Admin", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] add(IDM.Models.AddEmployeeViewModel) on controller IDM.Controllers.AdminController (IDM).
+2023-12-15 08:46:22.693 +05:30 [INF] Executed DbCommand (590ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Int64), @p10='?' (Size = 4000), @p11='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employee] ([Id], [Address], [AdhaarNumber], [DateOfBirth], [Department], [FirstName], [Gender], [LastName], [MobileNumber], [Salary], [email], [userPassword])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2023-12-15 08:46:22.721 +05:30 [INF] Executing RedirectResult, redirecting to /Admin/show.
+2023-12-15 08:46:22.723 +05:30 [INF] Executed action IDM.Controllers.AdminController.add (IDM) in 1012.4344ms
+2023-12-15 08:46:22.723 +05:30 [INF] Executed endpoint 'IDM.Controllers.AdminController.add (IDM)'
+2023-12-15 08:46:22.723 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5054/Admin/Add application/x-www-form-urlencoded 306 - 302 0 - 1036.3244ms
+2023-12-15 08:46:22.763 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Admin/show - -
+2023-12-15 08:46:22.764 +05:30 [INF] Executing endpoint 'IDM.Controllers.AdminController.show (IDM)'
+2023-12-15 08:46:22.765 +05:30 [INF] Route matched with {action = "show", controller = "Admin", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] show() on controller IDM.Controllers.AdminController (IDM).
+2023-12-15 08:46:22.769 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[AdhaarNumber], [e].[DateOfBirth], [e].[Department], [e].[FirstName], [e].[Gender], [e].[LastName], [e].[MobileNumber], [e].[Salary], [e].[email], [e].[userPassword]
+FROM [Employee] AS [e]
+2023-12-15 08:46:22.771 +05:30 [INF] Executing ViewResult, running view show.
+2023-12-15 08:46:22.778 +05:30 [INF] Executed ViewResult - view show executed in 6.471ms.
+2023-12-15 08:46:22.779 +05:30 [INF] Executed action IDM.Controllers.AdminController.show (IDM) in 14.2395ms
+2023-12-15 08:46:22.780 +05:30 [INF] Executed endpoint 'IDM.Controllers.AdminController.show (IDM)'
+2023-12-15 08:46:22.780 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Admin/show - - - 200 - text/html;+charset=utf-8 17.6397ms
+2023-12-15 08:46:29.279 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Admin/Update/744e89fa-6fcc-4af5-9663-c2c109f2ef48 - -
+2023-12-15 08:46:29.281 +05:30 [INF] Executing endpoint 'IDM.Controllers.AdminController.update (IDM)'
+2023-12-15 08:46:29.295 +05:30 [INF] Route matched with {action = "update", controller = "Admin", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] update(System.Guid) on controller IDM.Controllers.AdminController (IDM).
+2023-12-15 08:46:29.320 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Address], [e].[AdhaarNumber], [e].[DateOfBirth], [e].[Department], [e].[FirstName], [e].[Gender], [e].[LastName], [e].[MobileNumber], [e].[Salary], [e].[email], [e].[userPassword]
+FROM [Employee] AS [e]
+WHERE [e].[Id] = @__id_0
+2023-12-15 08:46:29.329 +05:30 [INF] Executing ViewResult, running view Update.
+2023-12-15 08:46:29.444 +05:30 [INF] Executed ViewResult - view Update executed in 117.3984ms.
+2023-12-15 08:46:29.445 +05:30 [INF] Executed action IDM.Controllers.AdminController.update (IDM) in 149.7325ms
+2023-12-15 08:46:29.445 +05:30 [INF] Executed endpoint 'IDM.Controllers.AdminController.update (IDM)'
+2023-12-15 08:46:29.445 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Admin/Update/744e89fa-6fcc-4af5-9663-c2c109f2ef48 - - - 200 - text/html;+charset=utf-8 165.9654ms
+2023-12-15 08:46:33.009 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5054/Admin/Delete application/x-www-form-urlencoded 322
+2023-12-15 08:46:33.011 +05:30 [INF] Executing endpoint 'IDM.Controllers.AdminController.delete (IDM)'
+2023-12-15 08:46:33.025 +05:30 [INF] Route matched with {action = "delete", controller = "Admin", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] delete(IDM.Models.UpdateEmployeeViewModel) on controller IDM.Controllers.AdminController (IDM).
+2023-12-15 08:46:33.144 +05:30 [INF] Executed DbCommand (56ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Address], [e].[AdhaarNumber], [e].[DateOfBirth], [e].[Department], [e].[FirstName], [e].[Gender], [e].[LastName], [e].[MobileNumber], [e].[Salary], [e].[email], [e].[userPassword]
+FROM [Employee] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2023-12-15 08:46:33.263 +05:30 [INF] Executed DbCommand (92ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Employee]
+OUTPUT 1
+WHERE [Id] = @p0;
+2023-12-15 08:46:33.282 +05:30 [INF] Executing RedirectResult, redirecting to /Admin/show.
+2023-12-15 08:46:33.283 +05:30 [INF] Executed action IDM.Controllers.AdminController.delete (IDM) in 257.5153ms
+2023-12-15 08:46:33.283 +05:30 [INF] Executed endpoint 'IDM.Controllers.AdminController.delete (IDM)'
+2023-12-15 08:46:33.284 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5054/Admin/Delete application/x-www-form-urlencoded 322 - 302 0 - 275.1888ms
+2023-12-15 08:46:33.291 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Admin/show - -
+2023-12-15 08:46:33.293 +05:30 [INF] Executing endpoint 'IDM.Controllers.AdminController.show (IDM)'
+2023-12-15 08:46:33.294 +05:30 [INF] Route matched with {action = "show", controller = "Admin", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] show() on controller IDM.Controllers.AdminController (IDM).
+2023-12-15 08:46:33.297 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[AdhaarNumber], [e].[DateOfBirth], [e].[Department], [e].[FirstName], [e].[Gender], [e].[LastName], [e].[MobileNumber], [e].[Salary], [e].[email], [e].[userPassword]
+FROM [Employee] AS [e]
+2023-12-15 08:46:33.300 +05:30 [INF] Executing ViewResult, running view show.
+2023-12-15 08:46:33.301 +05:30 [INF] Executed ViewResult - view show executed in 1.7393ms.
+2023-12-15 08:46:33.302 +05:30 [INF] Executed action IDM.Controllers.AdminController.show (IDM) in 7.773ms
+2023-12-15 08:46:33.302 +05:30 [INF] Executed endpoint 'IDM.Controllers.AdminController.show (IDM)'
+2023-12-15 08:46:33.302 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Admin/show - - - 200 - text/html;+charset=utf-8 10.7099ms
+2023-12-15 09:02:57.914 +05:30 [INF] Application is shutting down...

@@ -1,0 +1,335 @@
+2023-08-09 04:35:20.405 +05:30 [INF] User profile is available. Using 'C:\Users\Krishna\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-09 04:35:23.419 +05:30 [INF] Executed DbCommand (141ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-08-09 04:35:23.592 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-08-09 04:35:23.753 +05:30 [INF] Now listening on: http://localhost:5054
+2023-08-09 04:35:23.758 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-09 04:35:23.759 +05:30 [INF] Hosting environment: Development
+2023-08-09 04:35:23.760 +05:30 [INF] Content root path: E:\IDM
+2023-08-09 04:35:24.693 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/ - -
+2023-08-09 04:35:24.820 +05:30 [WRN] Failed to determine the https port for redirect.
+2023-08-09 04:35:25.293 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2023-08-09 04:35:25.658 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-08-09 04:35:25.720 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-08-09 04:35:25.727 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-08-09 04:35:25.746 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-08-09 04:35:25.790 +05:30 [INF] Executing endpoint 'IDM.Controllers.HomeController.Index (IDM)'
+2023-08-09 04:35:25.975 +05:30 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller IDM.Controllers.HomeController (IDM).
+2023-08-09 04:35:26.102 +05:30 [INF] Executing ViewResult, running view Index.
+2023-08-09 04:35:26.485 +05:30 [INF] Executed ViewResult - view Index executed in 446.0835ms.
+2023-08-09 04:35:26.488 +05:30 [INF] Executed action IDM.Controllers.HomeController.Index (IDM) in 511.414ms
+2023-08-09 04:35:26.489 +05:30 [INF] Executed endpoint 'IDM.Controllers.HomeController.Index (IDM)'
+2023-08-09 04:35:26.586 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/ - - - 200 - text/html;+charset=utf-8 1897.3504ms
+2023-08-09 04:35:27.067 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - -
+2023-08-09 04:35:27.072 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 4.7252ms
+2023-08-09 04:35:27.748 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Admin/Show - -
+2023-08-09 04:35:27.804 +05:30 [INF] Executing endpoint 'IDM.Controllers.AdminController.show (IDM)'
+2023-08-09 04:35:27.837 +05:30 [INF] Route matched with {action = "show", controller = "Admin", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] show() on controller IDM.Controllers.AdminController (IDM).
+2023-08-09 04:35:27.940 +05:30 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[AdhaarNumber], [e].[DateOfBirth], [e].[Department], [e].[FirstName], [e].[Gender], [e].[LastName], [e].[MobileNumber], [e].[Salary], [e].[email], [e].[userPassword]
+FROM [Employee] AS [e]
+2023-08-09 04:35:28.117 +05:30 [INF] Executing ViewResult, running view show.
+2023-08-09 04:35:28.181 +05:30 [INF] Executed ViewResult - view show executed in 66.5005ms.
+2023-08-09 04:35:28.184 +05:30 [INF] Executed action IDM.Controllers.AdminController.show (IDM) in 347.1136ms
+2023-08-09 04:35:28.185 +05:30 [INF] Executed endpoint 'IDM.Controllers.AdminController.show (IDM)'
+2023-08-09 04:35:28.187 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Admin/Show - - - 200 - text/html;+charset=utf-8 438.9600ms
+2023-08-09 04:35:28.235 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - -
+2023-08-09 04:35:28.237 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 1.5403ms
+2023-08-09 04:35:31.186 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5054/Identity/Account/Logout?returnUrl=%2F application/x-www-form-urlencoded 225
+2023-08-09 04:35:31.247 +05:30 [INF] Executing endpoint '/Account/Logout'
+2023-08-09 04:35:31.317 +05:30 [INF] Route matched with {page = "/Account/Logout", area = "Identity", action = "", controller = ""}. Executing page /Account/Logout
+2023-08-09 04:35:31.423 +05:30 [INF] Executing handler method IDM.Areas.Identity.Pages.Account.LogoutModel.OnPost - ModelState is "Valid"
+2023-08-09 04:35:31.476 +05:30 [INF] AuthenticationScheme: Identity.Application signed out.
+2023-08-09 04:35:31.479 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2023-08-09 04:35:31.479 +05:30 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2023-08-09 04:35:31.480 +05:30 [INF] User logged out.
+2023-08-09 04:35:31.481 +05:30 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2023-08-09 04:35:31.484 +05:30 [INF] Executing LocalRedirectResult, redirecting to /.
+2023-08-09 04:35:31.486 +05:30 [INF] Executed page /Account/Logout in 167.3746ms
+2023-08-09 04:35:31.486 +05:30 [INF] Executed endpoint '/Account/Logout'
+2023-08-09 04:35:31.486 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5054/Identity/Account/Logout?returnUrl=%2F application/x-www-form-urlencoded 225 - 302 0 - 300.5857ms
+2023-08-09 04:35:31.496 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/ - -
+2023-08-09 04:35:31.497 +05:30 [INF] Executing endpoint 'IDM.Controllers.HomeController.Index (IDM)'
+2023-08-09 04:35:31.498 +05:30 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller IDM.Controllers.HomeController (IDM).
+2023-08-09 04:35:31.500 +05:30 [INF] Executing ViewResult, running view Index.
+2023-08-09 04:35:31.513 +05:30 [INF] Executed ViewResult - view Index executed in 14.3734ms.
+2023-08-09 04:35:31.514 +05:30 [INF] Executed action IDM.Controllers.HomeController.Index (IDM) in 16.0232ms
+2023-08-09 04:35:31.514 +05:30 [INF] Executed endpoint 'IDM.Controllers.HomeController.Index (IDM)'
+2023-08-09 04:35:31.516 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/ - - - 200 - text/html;+charset=utf-8 19.5673ms
+2023-08-09 04:35:31.560 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - -
+2023-08-09 04:35:31.562 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 1.4988ms
+2023-08-09 04:35:31.793 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/Login - -
+2023-08-09 04:35:31.807 +05:30 [INF] Executing endpoint '/Account/Login'
+2023-08-09 04:35:31.884 +05:30 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2023-08-09 04:35:31.896 +05:30 [INF] Executing handler method IDM.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2023-08-09 04:35:31.899 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2023-08-09 04:35:31.901 +05:30 [INF] Executed handler method OnGetAsync, returned result .
+2023-08-09 04:35:31.906 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-08-09 04:35:31.906 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-08-09 04:35:32.356 +05:30 [INF] Executed page /Account/Login in 471.7251ms
+2023-08-09 04:35:32.357 +05:30 [INF] Executed endpoint '/Account/Login'
+2023-08-09 04:35:32.359 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/Login - - - 200 - text/html;+charset=utf-8 564.7514ms
+2023-08-09 04:35:32.754 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/popper.js - -
+2023-08-09 04:35:32.761 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/popper.js - - - 404 0 - 6.3603ms
+2023-08-09 04:35:32.777 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/jquery.min.js - -
+2023-08-09 04:35:32.778 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/jquery.min.js - - - 404 0 - 0.9858ms
+2023-08-09 04:35:32.782 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - -
+2023-08-09 04:35:32.782 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.4140ms
+2023-08-09 04:35:32.792 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/main.js - -
+2023-08-09 04:35:32.793 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/main.js - - - 404 0 - 1.1086ms
+2023-08-09 04:35:32.866 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/bootstrap.min.js - -
+2023-08-09 04:35:32.867 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/bootstrap.min.js - - - 404 0 - 0.6851ms
+2023-08-09 04:43:41.007 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/Login - -
+2023-08-09 04:43:41.008 +05:30 [INF] Executing endpoint '/Account/Login'
+2023-08-09 04:43:41.025 +05:30 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2023-08-09 04:43:41.027 +05:30 [INF] Executing handler method IDM.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2023-08-09 04:43:41.028 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2023-08-09 04:43:41.028 +05:30 [INF] Executed handler method OnGetAsync, returned result .
+2023-08-09 04:43:41.028 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-08-09 04:43:41.029 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-08-09 04:43:41.055 +05:30 [INF] Executed page /Account/Login in 29.8511ms
+2023-08-09 04:43:41.055 +05:30 [INF] Executed endpoint '/Account/Login'
+2023-08-09 04:43:41.055 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/Login - - - 200 - text/html;+charset=utf-8 48.1202ms
+2023-08-09 04:43:41.213 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/popper.js - -
+2023-08-09 04:43:41.213 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/jquery.min.js - -
+2023-08-09 04:43:41.218 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/bootstrap.min.js - -
+2023-08-09 04:43:41.227 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/jquery.min.js - - - 404 0 - 13.1291ms
+2023-08-09 04:43:41.227 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/bootstrap.min.js - - - 404 0 - 8.7423ms
+2023-08-09 04:43:41.227 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/popper.js - - - 404 0 - 13.1551ms
+2023-08-09 04:43:41.238 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - -
+2023-08-09 04:43:41.238 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/main.js - -
+2023-08-09 04:43:41.238 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.4754ms
+2023-08-09 04:43:41.239 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/main.js - - - 404 0 - 1.0011ms
+2023-08-09 05:29:49.901 +05:30 [INF] Application is shutting down...
+2023-08-09 05:54:01.458 +05:30 [INF] User profile is available. Using 'C:\Users\Krishna\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-09 05:54:03.948 +05:30 [INF] Executed DbCommand (161ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-08-09 05:54:04.108 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-08-09 05:54:04.229 +05:30 [INF] Now listening on: http://localhost:5054
+2023-08-09 05:54:04.235 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-09 05:54:04.236 +05:30 [INF] Hosting environment: Development
+2023-08-09 05:54:04.236 +05:30 [INF] Content root path: E:\IDM
+2023-08-09 05:54:04.752 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/ - -
+2023-08-09 05:54:04.791 +05:30 [WRN] Failed to determine the https port for redirect.
+2023-08-09 05:54:04.939 +05:30 [INF] Executing endpoint 'IDM.Controllers.HomeController.Index (IDM)'
+2023-08-09 05:54:04.970 +05:30 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller IDM.Controllers.HomeController (IDM).
+2023-08-09 05:54:05.001 +05:30 [INF] Executing ViewResult, running view Index.
+2023-08-09 05:54:06.424 +05:30 [INF] Executed ViewResult - view Index executed in 1430.4863ms.
+2023-08-09 05:54:06.427 +05:30 [INF] Executed action IDM.Controllers.HomeController.Index (IDM) in 1455.6456ms
+2023-08-09 05:54:06.428 +05:30 [INF] Executed endpoint 'IDM.Controllers.HomeController.Index (IDM)'
+2023-08-09 05:54:06.457 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/ - - - 200 - text/html;+charset=utf-8 1710.9960ms
+2023-08-09 05:54:06.757 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - -
+2023-08-09 05:54:06.763 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 5.7461ms
+2023-08-09 05:54:07.549 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/Login - -
+2023-08-09 05:54:07.561 +05:30 [INF] Executing endpoint '/Account/Login'
+2023-08-09 05:54:07.625 +05:30 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2023-08-09 05:54:07.702 +05:30 [INF] Executing handler method IDM.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2023-08-09 05:54:07.716 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2023-08-09 05:54:07.719 +05:30 [INF] Executed handler method OnGetAsync, returned result .
+2023-08-09 05:54:07.725 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-08-09 05:54:07.725 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-08-09 05:54:08.025 +05:30 [INF] Executed page /Account/Login in 400.181ms
+2023-08-09 05:54:08.026 +05:30 [INF] Executed endpoint '/Account/Login'
+2023-08-09 05:54:08.027 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/Login - - - 200 - text/html;+charset=utf-8 477.9394ms
+2023-08-09 05:54:08.326 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/bootstrap.min.js - -
+2023-08-09 05:54:08.352 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/bootstrap.min.js - - - 404 0 - 26.1871ms
+2023-08-09 05:54:08.353 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/jquery.min.js - -
+2023-08-09 05:54:08.353 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/main.js - -
+2023-08-09 05:54:08.355 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/jquery.min.js - - - 404 0 - 1.6154ms
+2023-08-09 05:54:08.355 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/main.js - - - 404 0 - 1.4590ms
+2023-08-09 05:54:08.356 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/popper.js - -
+2023-08-09 05:54:08.358 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/popper.js - - - 404 0 - 1.5026ms
+2023-08-09 05:54:08.365 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - -
+2023-08-09 05:54:08.367 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 1.6646ms
+2023-08-09 05:54:38.420 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5054/Identity/Account/Login application/x-www-form-urlencoded 295
+2023-08-09 05:54:38.421 +05:30 [INF] Executing endpoint '/Account/Login'
+2023-08-09 05:54:38.423 +05:30 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2023-08-09 05:54:38.474 +05:30 [INF] Executing handler method IDM.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2023-08-09 05:54:38.698 +05:30 [INF] Executed DbCommand (70ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-08-09 05:54:39.299 +05:30 [INF] Executed DbCommand (39ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-08-09 05:54:39.387 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-08-09 05:54:39.399 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-08-09 05:54:39.421 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-08-09 05:54:39.442 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-08-09 05:54:39.451 +05:30 [INF] User logged in.
+2023-08-09 05:54:39.456 +05:30 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2023-08-09 05:54:39.467 +05:30 [INF] Executing LocalRedirectResult, redirecting to /.
+2023-08-09 05:54:39.470 +05:30 [INF] Executed page /Account/Login in 1046.9812ms
+2023-08-09 05:54:39.471 +05:30 [INF] Executed endpoint '/Account/Login'
+2023-08-09 05:54:39.478 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5054/Identity/Account/Login application/x-www-form-urlencoded 295 - 302 0 - 1057.2081ms
+2023-08-09 05:54:39.481 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/ - -
+2023-08-09 05:54:39.491 +05:30 [INF] Executing endpoint 'IDM.Controllers.HomeController.Index (IDM)'
+2023-08-09 05:54:39.492 +05:30 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller IDM.Controllers.HomeController (IDM).
+2023-08-09 05:54:39.494 +05:30 [INF] Executing ViewResult, running view Index.
+2023-08-09 05:54:39.604 +05:30 [INF] Executed ViewResult - view Index executed in 110.506ms.
+2023-08-09 05:54:39.604 +05:30 [INF] Executed action IDM.Controllers.HomeController.Index (IDM) in 111.9456ms
+2023-08-09 05:54:39.604 +05:30 [INF] Executed endpoint 'IDM.Controllers.HomeController.Index (IDM)'
+2023-08-09 05:54:39.605 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/ - - - 200 - text/html;+charset=utf-8 123.1327ms
+2023-08-09 05:54:39.756 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - -
+2023-08-09 05:54:39.756 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.3738ms
+2023-08-09 05:55:25.135 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Client/showProfile - -
+2023-08-09 05:55:25.161 +05:30 [INF] Executing endpoint 'IDM.Controllers.ClientController.showProfile (IDM)'
+2023-08-09 05:55:25.178 +05:30 [INF] Route matched with {action = "showProfile", controller = "Client", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] showProfile(System.Guid) on controller IDM.Controllers.ClientController (IDM).
+2023-08-09 05:55:25.601 +05:30 [INF] Executed DbCommand (366ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Address], [e].[AdhaarNumber], [e].[DateOfBirth], [e].[Department], [e].[FirstName], [e].[Gender], [e].[LastName], [e].[MobileNumber], [e].[Salary], [e].[email], [e].[userPassword]
+FROM [Employee] AS [e]
+2023-08-09 05:55:25.693 +05:30 [INF] Executing ViewResult, running view showProfile.
+2023-08-09 05:55:25.751 +05:30 [INF] Executed ViewResult - view showProfile executed in 61.7161ms.
+2023-08-09 05:55:25.752 +05:30 [INF] Executed action IDM.Controllers.ClientController.showProfile (IDM) in 573.5855ms
+2023-08-09 05:55:25.752 +05:30 [INF] Executed endpoint 'IDM.Controllers.ClientController.showProfile (IDM)'
+2023-08-09 05:55:25.754 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Client/showProfile - - - 200 - text/html;+charset=utf-8 618.9263ms
+2023-08-09 05:55:25.801 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Client/style.css - -
+2023-08-09 05:55:25.803 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - -
+2023-08-09 05:55:25.804 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.5809ms
+2023-08-09 05:55:25.810 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Client/style.css - - - 404 0 - 9.7700ms
+2023-08-09 05:56:03.883 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5054/Identity/Account/Logout?returnUrl=%2F application/x-www-form-urlencoded 225
+2023-08-09 05:56:03.892 +05:30 [INF] Executing endpoint '/Account/Logout'
+2023-08-09 05:56:03.906 +05:30 [INF] Route matched with {page = "/Account/Logout", area = "Identity", action = "", controller = ""}. Executing page /Account/Logout
+2023-08-09 05:56:03.922 +05:30 [INF] Executing handler method IDM.Areas.Identity.Pages.Account.LogoutModel.OnPost - ModelState is "Valid"
+2023-08-09 05:56:03.925 +05:30 [INF] AuthenticationScheme: Identity.Application signed out.
+2023-08-09 05:56:03.925 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2023-08-09 05:56:03.925 +05:30 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2023-08-09 05:56:03.926 +05:30 [INF] User logged out.
+2023-08-09 05:56:03.927 +05:30 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2023-08-09 05:56:03.928 +05:30 [INF] Executing LocalRedirectResult, redirecting to /.
+2023-08-09 05:56:03.929 +05:30 [INF] Executed page /Account/Logout in 22.4988ms
+2023-08-09 05:56:03.929 +05:30 [INF] Executed endpoint '/Account/Logout'
+2023-08-09 05:56:03.930 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5054/Identity/Account/Logout?returnUrl=%2F application/x-www-form-urlencoded 225 - 302 0 - 46.3786ms
+2023-08-09 05:56:03.937 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/ - -
+2023-08-09 05:56:03.938 +05:30 [INF] Executing endpoint 'IDM.Controllers.HomeController.Index (IDM)'
+2023-08-09 05:56:03.938 +05:30 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller IDM.Controllers.HomeController (IDM).
+2023-08-09 05:56:03.938 +05:30 [INF] Executing ViewResult, running view Index.
+2023-08-09 05:56:03.940 +05:30 [INF] Executed ViewResult - view Index executed in 1.5824ms.
+2023-08-09 05:56:03.940 +05:30 [INF] Executed action IDM.Controllers.HomeController.Index (IDM) in 1.9325ms
+2023-08-09 05:56:03.940 +05:30 [INF] Executed endpoint 'IDM.Controllers.HomeController.Index (IDM)'
+2023-08-09 05:56:03.940 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/ - - - 200 - text/html;+charset=utf-8 3.0553ms
+2023-08-09 05:56:03.988 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - -
+2023-08-09 05:56:03.988 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.4333ms
+2023-08-09 05:56:04.267 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/Login - -
+2023-08-09 05:56:04.268 +05:30 [INF] Executing endpoint '/Account/Login'
+2023-08-09 05:56:04.269 +05:30 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2023-08-09 05:56:04.271 +05:30 [INF] Executing handler method IDM.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2023-08-09 05:56:04.272 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2023-08-09 05:56:04.272 +05:30 [INF] Executed handler method OnGetAsync, returned result .
+2023-08-09 05:56:04.272 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-08-09 05:56:04.272 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-08-09 05:56:04.289 +05:30 [INF] Executed page /Account/Login in 19.642ms
+2023-08-09 05:56:04.290 +05:30 [INF] Executed endpoint '/Account/Login'
+2023-08-09 05:56:04.290 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/Login - - - 200 - text/html;+charset=utf-8 23.4775ms
+2023-08-09 05:56:04.421 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/jquery.min.js - -
+2023-08-09 05:56:04.422 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/popper.js - -
+2023-08-09 05:56:04.422 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/jquery.min.js - - - 404 0 - 0.9796ms
+2023-08-09 05:56:04.423 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/popper.js - - - 404 0 - 0.8760ms
+2023-08-09 05:56:04.424 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/main.js - -
+2023-08-09 05:56:04.424 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/bootstrap.min.js - -
+2023-08-09 05:56:04.424 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/main.js - - - 404 0 - 0.7223ms
+2023-08-09 05:56:04.424 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/bootstrap.min.js - - - 404 0 - 0.4252ms
+2023-08-09 05:56:04.434 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - -
+2023-08-09 05:56:04.434 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.4309ms
+2023-08-09 06:06:38.587 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/Login - -
+2023-08-09 06:06:38.589 +05:30 [INF] Executing endpoint '/Account/Login'
+2023-08-09 06:06:38.603 +05:30 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2023-08-09 06:06:38.605 +05:30 [INF] Executing handler method IDM.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2023-08-09 06:06:38.605 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2023-08-09 06:06:38.606 +05:30 [INF] Executed handler method OnGetAsync, returned result .
+2023-08-09 06:06:38.606 +05:30 [INF] Executing an implicit handler method - ModelState is "Valid"
+2023-08-09 06:06:38.606 +05:30 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2023-08-09 06:06:38.623 +05:30 [INF] Executed page /Account/Login in 19.8845ms
+2023-08-09 06:06:38.623 +05:30 [INF] Executed endpoint '/Account/Login'
+2023-08-09 06:06:38.625 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/Login - - - 200 - text/html;+charset=utf-8 36.4426ms
+2023-08-09 06:06:38.668 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/jquery.min.js - -
+2023-08-09 06:06:38.671 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/popper.js - -
+2023-08-09 06:06:38.675 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/bootstrap.min.js - -
+2023-08-09 06:06:38.683 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/bootstrap.min.js - - - 404 0 - 7.9192ms
+2023-08-09 06:06:38.683 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/popper.js - - - 404 0 - 12.6881ms
+2023-08-09 06:06:38.683 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/jquery.min.js - - - 404 0 - 15.5821ms
+2023-08-09 06:06:38.692 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - -
+2023-08-09 06:06:38.692 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/Identity/Account/js/main.js - -
+2023-08-09 06:06:38.692 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.2373ms
+2023-08-09 06:06:38.692 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/Identity/Account/js/main.js - - - 404 0 - 0.7071ms
+2023-08-09 06:06:59.897 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5054/Identity/Account/Login application/x-www-form-urlencoded 295
+2023-08-09 06:06:59.898 +05:30 [INF] Executing endpoint '/Account/Login'
+2023-08-09 06:06:59.912 +05:30 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2023-08-09 06:06:59.918 +05:30 [INF] Executing handler method IDM.Areas.Identity.Pages.Account.LoginModel.OnPostAsync - ModelState is "Valid"
+2023-08-09 06:07:00.046 +05:30 [INF] Executed DbCommand (67ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-08-09 06:07:00.206 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-08-09 06:07:00.217 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-08-09 06:07:00.222 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-08-09 06:07:00.228 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-08-09 06:07:00.234 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-08-09 06:07:00.234 +05:30 [INF] User logged in.
+2023-08-09 06:07:00.234 +05:30 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2023-08-09 06:07:00.234 +05:30 [INF] Executing LocalRedirectResult, redirecting to /.
+2023-08-09 06:07:00.235 +05:30 [INF] Executed page /Account/Login in 322.1398ms
+2023-08-09 06:07:00.235 +05:30 [INF] Executed endpoint '/Account/Login'
+2023-08-09 06:07:00.235 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5054/Identity/Account/Login application/x-www-form-urlencoded 295 - 302 0 - 338.0982ms
+2023-08-09 06:07:00.241 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/ - -
+2023-08-09 06:07:00.242 +05:30 [INF] Executing endpoint 'IDM.Controllers.HomeController.Index (IDM)'
+2023-08-09 06:07:00.247 +05:30 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller IDM.Controllers.HomeController (IDM).
+2023-08-09 06:07:00.250 +05:30 [INF] Index action method called.
+2023-08-09 06:07:00.253 +05:30 [INF] Executing ViewResult, running view Index.
+2023-08-09 06:07:00.269 +05:30 [INF] Executed ViewResult - view Index executed in 18.8973ms.
+2023-08-09 06:07:00.269 +05:30 [INF] Executed action IDM.Controllers.HomeController.Index (IDM) in 21.7816ms
+2023-08-09 06:07:00.270 +05:30 [INF] Executed endpoint 'IDM.Controllers.HomeController.Index (IDM)'
+2023-08-09 06:07:00.270 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/ - - - 200 - text/html;+charset=utf-8 29.2416ms
+2023-08-09 06:07:00.317 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - -
+2023-08-09 06:07:00.317 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5054/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.3833ms
+2023-08-09 06:09:46.933 +05:30 [INF] Application is shutting down...
